@@ -520,10 +520,7 @@ conn.sendMessage(id, 'Silakan ulangi dengan mengirim foto dengan caption .ocr',M
    }
 
   //Pict to sticker
-if (text.includes('.Stiker')){
-conn.sendMessage(id, 'Silakan ulangi dengan mengirim foto dengan caption .stiker',MessageType.text, {quoted: m});
-}
-   if (messageType == 'imageMessage')
+if (messageType == 'imageMessage')
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
@@ -557,7 +554,7 @@ conn.sendMessage(id, 'Silakan ulangi dengan mengirim foto dengan caption .stiker
    }
 
   //Pantun
-   if (messageType === MessageType.text)
+   if (messageType === MessageType.text) 
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
