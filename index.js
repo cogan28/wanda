@@ -15,13 +15,13 @@ const speed = require('performance-now');
 const apivhtear = 'siregar2k99HHftel';
 const apibarbar = 'B4w56Fy3WQnfEyUNvQy8';
 const tobzkey = 'BotWeA';
-const BotName = '♥SAGIRI CHAN♥'; 
+const BotName = '♡♞Sagiri Chan♞♡'; 
 const instagram = 'http://www.instagram.com/cogan_112'; 
-const aktif = 'tergantung kuota';
+const aktif = 'tergantung owner';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:StyleCogan\n' // Nama kamu
-            + 'ORG:♥SAGIRI CHAN♥;\n' // Nama bot
+            + 'FN:Style Cogan\n' // Nama kamu
+            + 'ORG:♡♞Sagiri Chan♞♡;\n' // Nama bot
             + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
@@ -350,7 +350,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes('.tagme')) {
  var nomor = m.participant
  const options = {
-       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai Sayangku yg imut 🤗`,
+       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai sayang 🤗`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text)
@@ -493,7 +493,7 @@ if (text.includes(".sholat")){
   const teks = text.replace(/.sholat /, "")
   axios.get(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${teks}&apikey=${tobzkey}`).then ((res) =>{
   conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal sholat⏳ silahkan tunggu', MessageType.text, {quoted: m})
-  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n*Imsak* : ${res.data.result.imsyak} WIB\n*Subuh* : ${res.data.result.subuh} WIB\n*Dzuhur* : ${res.data.result.dzuhur} WIB\n*Ashar* : ${res.data.result.ashar} WIB\n*Maghrib* : ${res.data.result.maghrib} WIB\n*Isya* : ${res.data.result.isha} WIB`;
+  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n*Imsak* : ${res.data.result.imsak} WIB\n*Subuh* : ${res.data.result.subuh} WIB\n*Dzuhur* : ${res.data.result.dzuhur} WIB\n*Ashar* : ${res.data.result.ashar} WIB\n*Maghrib* : ${res.data.result.maghrib} WIB\n*Isya* : ${res.data.result.isha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text, {quoted: m});
 })
 }
@@ -1395,7 +1395,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .bot 
 if (text.includes(".bot")){
 const teks = text.replace(/.bot /, "")
 axios.get(`https://tobz-api.herokuapp.com/api/simsimi?text=${teks}&apikey=${tobzkey}`).then((res) => {
-    let hasil = `${res.data}\n\n*Simsimi chat*`;
+    let hasil = `${res.data.result}\n\n*Simsimi chat*`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -1618,7 +1618,7 @@ ${instagram}
 ├ _Ex = .Twt http://www.twt..._ 
 ├≽️ *.Ig link*
 ├ _Ex = .Ig http://www.inst.._
-├≽️ *.Joox (judul lagu)
+├≽️ *.Joox (judul lagu)*
 ├ _Ex = .Joox akad - payung teduh_ 
 ╰═══════════════  `,
        contextInfo: { mentionedJid: [nomor] }

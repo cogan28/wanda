@@ -19,13 +19,10 @@
 Re-upload numpang ganti nama gabakal bikin lu pro
 </div>
 
-* "Wahai orang-orang yang beriman, mengapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?
+* "Wahai orang-orang yang beriman, mengapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?, Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu kerjakan."
+(QS ash-Shaff: 2-3).
 
-* Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu kerjakan."
-
-* (QS ash-Shaff: 2-3).
-
-## Give me Start ⭐ please
+## Give me Start ⭐ to support
 
 ## Semua fitur bergantung pada api, jika mengalami error berarti api yang di pakai sedang bermasalah
 
@@ -41,10 +38,15 @@ Download aplikasi termux disini [DOWNLOAD](https://play.google.com/store/apps/de
 * Kapan Bot aktif
 * Apikey mhankbarbar
 * Apikey vhtear
+* Apikey tobz
 * Kontak whatsapp owner
 
 Custom di sini [SETTING](https://github.com/mrfzvx12/Arelbot/blob/master/index.js/#L13)
 
+## Dapatkan apikey disini
+* [Apibarbar](https://mhankbarbars.herokuapp.com/)
+* [Apivhtear](https://vhtear.com/)
+* [Apitobz](https://tobz-api.herokuapp.com/)
 
 ## Penginstalan
 
