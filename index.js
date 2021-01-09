@@ -12,17 +12,17 @@ const speed = require('performance-now');
 
 //Setting
 
-const apivhtear = 'siregar2k99HHftel';
-const apibarbar = 'B4w56Fy3WQnfEyUNvQy8';
-const tobzkey = 'BotWeA';
-const BotName = '♥♞Sagiri Chan♞♥'; 
-const instagram = 'http://www.instagram.com/cogan_112'; 
-const aktif = 'tergantung owner';
+const apivhtear = 'apivhtear';
+const apibarbar = 'apibarbar';
+const tobzkey = 'apitobz';
+const BotName = 'Lexa'; 
+const instagram = 'http://www.instagram.com/mrf.zvx'; 
+const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Style Cogan\n' // Nama kamu
-            + 'ORG:♥♞Sagiri Chan♞♥;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
+            + 'FN:Mrf.zvx\n' // Nama kamu
+            + 'ORG:Lexa;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=6282223014661:+62 822-2301-4661\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
 {
@@ -298,7 +298,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil, hanya berlaku j
 else if (text == '.opengc'){
 let hasil = `${id.split("@s.whatsapp.net")[0]}`;
    conn.groupSettingChange (hasil, GroupSettingChange.messageSend, false);
-conn.sendMessage(id, 'Hai para beban group' ,MessageType.text);
+conn.sendMessage(id, 'Hai' ,MessageType.text);
 }
 
 //tutup gc
@@ -350,7 +350,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes('.tagme')) {
  var nomor = m.participant
  const options = {
-       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai sayang 🤗`,
+       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai kak 🤗`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text)
@@ -557,7 +557,7 @@ conn.sendMessage(id, 'Silakan ulangi dengan mengirim foto dengan caption .stiker
    }
 
   //Pantun
-   if (messageType === MessageType.text) 
+   if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
@@ -1394,7 +1394,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .bot 
 }
 if (text.includes(".bot")){
 const teks = text.replace(/.bot /, "")
-axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => {
+axios.get(`https://tobz-api.herokuapp.com/api/simsimi?text=${teks}&apikey=${tobzkey}`).then((res) => {
     let hasil = `${res.data.result}\n\n*Simsimi chat*`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
