@@ -12,17 +12,17 @@ const speed = require('performance-now');
 
 //Setting
 
-const apivhtear = 'siregar2k99HHftel';
-const apibarbar = 'B4w56Fy3WQnfEyUNvQy8';
-const tobzkey = 'BotWeA';
-const BotName = '♥Sagiri Chan♥'; 
-const instagram = 'http://www.instagram.com/cogan_112'; 
-const aktif = 'tergantung owner';
+const apivhtear = 'apivhtear';
+const apibarbar = 'apibarbar';
+const tobzkey = 'apitobz';
+const BotName = 'Lexa'; 
+const instagram = 'http://www.instagram.com/mrf.zvx'; 
+const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Style Cogan\n' // Nama kamu
-            + 'ORG:sagiri chan;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
+            + 'FN:Mrf.zvx\n' // Nama kamu
+            + 'ORG:Lexa;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=6282223014661:+62 822-2301-4661\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
 {
@@ -76,7 +76,7 @@ conn.on('user-presence-update', json => console.log(json.id + ' presence is => '
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : ''
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@cogan_112`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@mrf.zvx`)
 })
 
 conn.on('message-new', async(m) =>
@@ -298,7 +298,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil, hanya berlaku j
 else if (text == '.opengc'){
 let hasil = `${id.split("@s.whatsapp.net")[0]}`;
    conn.groupSettingChange (hasil, GroupSettingChange.messageSend, false);
-conn.sendMessage(id, 'Hai para beban group' ,MessageType.text);
+conn.sendMessage(id, 'Hai' ,MessageType.text);
 }
 
 //tutup gc
@@ -350,7 +350,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes('.tagme')) {
  var nomor = m.participant
  const options = {
-       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai sayangku 🤗`,
+       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai kak 🤗`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text)
