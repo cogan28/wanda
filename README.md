@@ -22,17 +22,72 @@ Re-upload numpang ganti nama gabakal bikin lu pro
 * "Wahai orang-orang yang beriman, mengapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?, Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu kerjakan."
 (QS ash-Shaff: 2-3).
 
-### Give me Start ⭐ to support
+## Give me Stars ⭐ to support
 
-### Semua fitur bergantung pada api, jika mengalami error berarti api yang di pakai sedang bermasalah
+## Jangan lupa pilih watch agar kalian bisa dapat notifikasi ketika update
+
+<div align="center">
+    <img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/104745189-62cd8a80-5780-11eb-987d-1b77e5989613.gif" width="50">
+</div>
+
+**Semua fitur bergantung pada api, jika mengalami error berarti api yang di pakai sedang bermasalah**
 
 ### Sebelum install tes fitur dulu disini
 * [TES BOT](https://chat.whatsapp.com/FQNUK5VFD68GZaB0UlXjst)
 
 ## Alat
 
-Download aplikasi termux disini [DOWNLOAD](https://play.google.com/store/apps/details?id=com.termux) 
+Download aplikasi termux disini :
 
+[DOWNLOAD Termux](https://play.google.com/store/apps/details?id=com.termux) 
+
+Download aplikasi WhatsApp Bisnis disini :
+
+[DOWNLOAD Whatsapp Bisnis](https://play.google.com/store/apps/details?id=com.whatsapp.w4b) 
+
+## Dapatkan apikey disini
+
+Beberapa fitur berjalan menggunakan apikey, jika apikey tidak tersedia maka beberapa fitur tidak bisa di pakai.
+
+* [Apibarbar](https://mhankbarbars.herokuapp.com/)
+* [Apivhtear](https://vhtear.com/)
+* [Apitobz](https://tobz-api.herokuapp.com/)
+
+**Masuk grup tes bot di atas untuk mendapatkan apikey gratis 🙂**
+
+## Penginstalan
+
+**Jika pertama kali membuka termux lakukan perintah berikut :**
+```bash
+> pkg install git
+> pkg install wget
+> pkg install ffmpeg
+> pkg install nodejs
+> pkg install npm
+```
+**Lalu clone repo**
+```bash
+> git clone https://github.com/mrfzvx12/termux-whatsapp-bot
+> cd termux-whatsapp-bot
+```
+**Lanjutkan dengan**
+```bash
+> bash install.sh
+```
+**Jika mengalami error, lakukan perintah manual berikut :**
+```bash
+> pkg install tesseract
+> npm i -g cwebp
+> npm i -g ytdl
+> npm i node-tesseract-ocr
+> npm i
+> npm i got
+```
+**Jalankan bot**
+```bash
+> node index.js
+```
+**Terakhir scan kode QR**
 
 ## Settings
 
@@ -46,49 +101,74 @@ Download aplikasi termux disini [DOWNLOAD](https://play.google.com/store/apps/de
 
 Custom di sini [SETTING](https://github.com/mrfzvx12/Arelbot/blob/master/index.js/#L13)
 
-## Dapatkan apikey disini
+## Settings di termux
 
-Beberapa fitur berjalan menggunakan apikey, jika apikey tidak tersedia maka beberapa fitur tidak bisa di pakai.
+ **Matikan bot**
 
-* [Apibarbar](https://mhankbarbars.herokuapp.com/)
-* [Apivhtear](https://vhtear.com/)
-* [Apitobz](https://tobz-api.herokuapp.com/)
+• ctrl + z
 
-## Penginstalan
+ **Jika belum menginstall mc lakukan perintah berikut :**
 
-Jika pertama kali membuka termux lakukan perintah berikut :
 ```bash
-> pkg install git
-> pkg install wget
-> pkg install ffmpeg
-> pkg install nodejs
-> pkg install npm
+> pkg install mc
+> mc
 ```
-Lalu clone repo
-```bash
-> git clone https://github.com/mrfzvx12/termux-whatsapp-bot
-> cd termux-whatsapp-bot
-```
-Lanjutkan dengan
-```bash
-> bash install.sh
-```
-Jika mengalami error, lakukan perintah manual berikut :
-```bash
-> pkg install tesseract
-> npm i -g cwebp
-> npm i -g ytdl
-> npm i node-tesseract-ocr
-> npm i
-> npm i got
-```
-Jalankan bot
+ **Jika sudah di dalam mc seperti berikut :**
+
+• Klik file index.js
+
+• Klik edit
+
+<img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/104452742-00388b00-55d6-11eb-9521-2ec9bf9fc07a.jpg" width="320">
+
+ **Bagian bagian yang perlu di edit yang berwarna Ungu**
+
+   <img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/104451377-0a598a00-55d4-11eb-8d84-1ec950793b8f.jpg" width="320">
+
+ **Jika sudah klik save dan dan keluar dari menu mc ketik**
+
+• ctrl + z
+
+ **Jalankan bot kembali**
 ```bash
 > node index.js
 ```
-Terakhir scan kode QR
 
+## Settings di aplikasi acode
 
+Download [Disini](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree)
+
+ **Masuk ke aplikasi**
+
+• Klik titik tiga atas
+
+• Lalu pilih **Buka berkas**
+
+• Pilih folder **Select Document**
+
+<img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/104593554-71457480-56a2-11eb-9cb5-198c201fde62.png" width="320">
+
+ **Lalu klik Tanda kanan atas**
+
+• Maka akan muncul seperti ini
+
+<img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/104593713-a5b93080-56a2-11eb-9fd0-ed539bdf6d18.png" width="320">
+
+• Dan pilih termux
+
+ **Pilih file yang mau di edit**
+
+<img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/104593943-05174080-56a3-11eb-915b-4fb195e794d3.png" width="320">
+
+• Klik tanda 💾 untuk save
+
+ **Jika sudah klik save dan keluar dari aplikasi acode**
+
+ **Masuk ke aplikasi termux lalu jalankan bot**
+
+## Tutorial video
+
+* [Youtube](https://youtu.be/VqSer_W1yvI)
 
 ## FITUR
 
@@ -159,17 +239,27 @@ Terakhir scan kode QR
 
 | TEXT |Yes|
 | ------------- | ------------- |
-| Quotes maker|✅|
-| Logo pornhub|✅|
-| Text snow|✅|
-| Logo lion|✅|
-| Logo wolf|✅|
-| Logo ninja|✅|
-| Text neon|✅|
+| Quotes Maker|✅|
+| Logo Pornhub|✅|
+| Text Snow|✅|
+| Logo Lion|✅|
+| Logo Wolf|✅|
+| Logo Ninja|✅|
+| Text Neon 1-5|✅|
 | Text glitch|✅|
 | Text water|✅|
 | Text Blood|✅|
-
+| Text Thunder|✅|
+| Text Sand 1-4|✅|
+| Text Sky & cloud|✅|
+| Text Luxy|✅|
+| Text Baloo|✅|
+| Text Metal|✅|
+| Text Holo|✅|
+| Text Old|✅|
+| Text Blackping|✅|
+| Text Font generator|✅|
+| Text Matrix|✅|
 
 | EDUKASI |Yes|
 | ------------- | ------------- |
@@ -177,6 +267,8 @@ Terakhir scan kode QR
 | Al-Qur'an per surah|✅|
 | Brainly|✅|
 | Wikipedia|✅|
+| Translate Semua bahasa|✅|
+| Kode bahasa|✅|
 | Fakta|✅|
 | KBBI|✅|
 | Tanggal Nasional|✅|
