@@ -12,24 +12,23 @@ const speed = require('performance-now');
 
 //Setting
 
-const apivhtear = 'K2021Chikanot';
-const apibarbar = 'Nkwp9oR7Eg9yykbejBpm';
-const tobzkey = 'BotWeA';
-const BotName = 'ツSagiri Chanツ'; 
-const wa = 'https://chat.whatsapp.com/DnjwIrFJVw9J5O51TY26e6';
-const eror = 'CERPEN,PUISI DAN STIKER';
-const ow = 'Style Cogan';
-const nomorowner = '089509938750';
-const ovo = '089509938750';
-const pulsa = '089509938750';
-const dana = '089509938750';
-const instagram = 'http://www.instagram.com/cogan_111'; 
-const aktif = 'Tergantung kuota';
+const apivhtear = 'apikey';
+const apibarbar = 'apikey';
+const tobzkey = 'apikey';
+const BotName = 'Lexa'; 
+const wa = 'https://chat.whatsapp.com/FQNUK5VFD68GZaB0UlXjst';
+const eror = 'Info fitur Error';
+const ow = 'Mrf.zvx';
+const ovo = '082223014661';
+const pulsa = '082223014661';
+const dana = '082223014661';
+const instagram = 'http://www.instagram.com/mrf.zvx'; 
+const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Style Cogan\n' // Nama kamu
-            + 'ORG:Sagiri chan;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
+            + 'FN:Mrf.zvx\n' // Nama kamu
+            + 'ORG:Lexa;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=6282223014661:+62 822-2301-4661\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 //
 const
@@ -169,14 +168,13 @@ axios.get(`https://arugaz.herokuapp.com/api/howbucins`).then((res) => {
   //Bug report
 if (text.includes('.bug')) {
  const teks = text.replace(/.bug /, "")
- var nomor = m.participant
  const options = {
-       text: `*>Report* : ${nomor.split("@s.whatsapp.net")[0]} | ${id}\n*>Reason* : ${teks}`,
+       text: `*>Report* : @${nomor.split("@s.whatsapp.net")[0]} | ${id}\n*>Reason* : ${teks}`,
        contextInfo: { mentionedJid: [nomor] }
  }
  let hasil1 = `Info Bug *${teks}* Berhasil di kirimkan ke Owner`;
  conn.sendMessage(id, hasil1, MessageType.text, {quoted: m})
- conn.sendMessage(`${nomorowner}@s.whatsapp.net`, options, MessageType.text)
+ conn.sendMessage('6282223014661@s.whatsapp.net', options, MessageType.text)
 }
 
   //Owner to report
@@ -486,7 +484,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes('.tagme')) {
  var nomor = m.participant
  const options = {
-       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai Sayangku 🤗`,
+       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai kak 🤗`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text)
@@ -1674,7 +1672,10 @@ conn.sendMessage(id, 'Silakan ulangi dengan mengirim foto dengan caption .ocr',M
    }
 
   //Pict to sticker
-if (messageType == 'imageMessage')
+if (text.includes('.Stiker')){
+conn.sendMessage(id, 'Silakan ulangi dengan mengirim foto dengan caption .stiker',MessageType.text, {quoted: m});
+}
+   if (messageType == 'imageMessage')
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
@@ -3273,7 +3274,7 @@ Daftar pertanyaan yang bisa di jawab :
 *Apakah (Teks)*
 *Bolehkah (Teks)*
 *Kapan (Teks)*
-*Rate (Teks)*`;
+*Rate (Teks)*`,
       conn.sendMessage(id, buf, MessageType.image, { caption: hasil, quoted: m } )
         })
     })
